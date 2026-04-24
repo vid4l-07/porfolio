@@ -238,7 +238,7 @@ button {
 	max-width: 200px;
     display: flex;
     text-align: center;
-    min-height: calc(22.8 + 1.2rem * 3);  /* 3 lineas de texto */
+    min-height: calc(1.65rem * 3);  /* 3 lineas de texto */
     min-width: 100px;
     transform-origin: top center;
     align-items: center;
@@ -257,25 +257,25 @@ button {
 @keyframes salir{
   0%{
 	opacity: 1;
-    transform: rotateX(0deg);
+    transform: rotateY(0deg);
   }
   80%{
 	opacity: 1;
   }
   100%{
 	opacity: 0;
-	transform: rotateX(-90deg);
+	transform: rotateY(-90deg);
   }
 }
 
 @keyframes entrar{
   0%{
     opacity:0;
-    transform: rotateX(90deg);
+    transform: rotateY(90deg);
   }
   100%{
     opacity:1;
-    transform: rotateX(0deg);
+    transform: rotateY(0deg);
   }
 }
 
