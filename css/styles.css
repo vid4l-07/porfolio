@@ -324,12 +324,16 @@ button {
     cursor: pointer;
 }
 
-.estudios-org {
+.about-txt{
+	width: 60%;
+	text-align: center;
+}
 
+.estudios-org {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 40px;
+    gap: 18px;
     margin-top: 40px;
     width: 60%;
 }
@@ -339,11 +343,29 @@ button {
     flex-direction: column;
     align-content: flex-start;
     padding: 10px 20px;
-	border-radius: 7px;
-    /* border: solid 1px var(--light-txt); */
-    box-shadow: var(--box-shadow) 0px 0px 1px;
+	/* box-shadow: var(--box-shadow) 0px 0px 1px; */
+	/* border-radius: 7px; */
+    border-bottom: solid 1px var(--light-txt);
     transition: all 0.3s;
     width: 100%;
+}
+
+
+.fecha {
+	display: flex;
+	align-items: center;
+}
+
+.estudio-txt{
+	margin-top: 6px;
+	flex-direction: column;
+	display: flex;
+	font-size: 0.95rem;
+	gap: 7px;
+}
+
+.estudio-txt p {
+	margin: 0;
 }
 
 .estudio:hover {
@@ -352,9 +374,11 @@ button {
 }
 
 .estudios-org:hover .estudio{
+	border: none;
 	opacity: 0.5;
 }
 .estudios-org .estudio:hover{
+	border-radius: 7px;
 	opacity: 1;
 }
 
@@ -363,6 +387,7 @@ button {
     align-items: center;
     justify-content: center;
     width: fit-content;
+	margin-top: 10px;
 }
 
 .cert-bot {
@@ -466,7 +491,9 @@ button {
 }
 
 .proyecto-mrg {
-    margin: 10px auto ;
+	margin: 0px auto;
+	margin-top: 5px;
+	margin-bottom: 3px;
 }
 
 .proyecto-img {
@@ -478,11 +505,9 @@ button {
 }
 
 .under-txt {
-    border-bottom-color: var(--primary);
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
+    border-bottom: solid 2px var(--primary);
     width: fit-content;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 
 .proyecto-icon-org {
