@@ -460,6 +460,10 @@ button {
     margin-bottom: 2px;
 }
 
+.proyecto-len {
+	margin-top: 5px;
+}
+
 .proyecto-icon-org {
     position: relative;
     display: inline-block;
